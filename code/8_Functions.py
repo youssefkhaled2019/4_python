@@ -1,3 +1,6 @@
+def info():
+    pass
+print(info())#return none
 #===================function=========================
 def my_function(fname, lname):
   print(fname + " " + lname)
@@ -76,3 +79,32 @@ my_function10(5, 6, c = 7, d = 8)
 
 tri_recursion(6)
 
+
+
+
+
+
+# ================================================
+#                  Function 
+# ================================================
+# Function Inside Function
+def myfunc():
+  x = 300
+  def myinnerfunc():
+    print(x)
+  myinnerfunc()
+
+myfunc()
+
+# Nonlocal Keyword
+  # -The nonlocal keyword is used to work with variables inside nested functions.
+  # -The nonlocal keyword makes the variable belong to the outer function.
+def myfunc1():
+  x = "Jane"
+  def myfunc2():
+    nonlocal x
+    x = "hello"
+  myfunc2()
+  return x
+
+print(myfunc1()) 

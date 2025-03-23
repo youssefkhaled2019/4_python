@@ -1,29 +1,16 @@
 Python Tutorial
                     Python Operators
-                    Python Lists
-                    Python Tuples
-                    Python Sets
-                    Python Dictionaries
-    Python Lambda
-    Python Arrays
-    Python Classes/Objects
-    Python Inheritance
-    Python Iterators
+                                           Python Dictionaries
+                                           Python Iterators
     Python Polymorphism
-    Python Scope
     Python Modules
     Python Dates
     Python Math
     Python JSON
     Python RegEx
-    Python PIP
     Python String Formatting
 
-File Handling
-    Python File Handling
-    Python Read Files
-    Python Write/Create Files
-    Python Delete Files
+ 
 
 Python Modules
     NumPy Tutorial
@@ -47,29 +34,29 @@ Python Matplotlib
     Matplotlib Pie Charts
 
 Machine Learning
-Getting Started
-Mean Median Mode
-Standard Deviation
-Percentile
-Data Distribution
-Normal Data Distribution
-Scatter Plot
-Linear Regression
-Polynomial Regression
-Multiple Regression
-Scale
-Train/Test
-Decision Tree
-Confusion Matrix
-Hierarchical Clustering
-Logistic Regression
-Grid Search
-Categorical Data
-K-means
-Bootstrap Aggregation
-Cross Validation
-AUC - ROC Curve
-K-nearest neighbors
+    Getting Started
+    Mean Median Mode
+    Standard Deviation
+    Percentile
+    Data Distribution
+    Normal Data Distribution
+    Scatter Plot
+    Linear Regression
+    Polynomial Regression
+    Multiple Regression
+    Scale
+    Train/Test
+    Decision Tree
+    Confusion Matrix
+    Hierarchical Clustering
+    Logistic Regression
+    Grid Search
+    Categorical Data
+    K-means
+    Bootstrap Aggregation
+    Cross Validation
+    AUC - ROC Curve
+    K-nearest neighbors
 
 Python MySQL
     MySQL Get Started
