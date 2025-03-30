@@ -1,12 +1,6 @@
 Python Tutorial
-                    Python Operators
-                                           Python Dictionaries
                                            Python Iterators
     Python Polymorphism
-    Python Modules
-    Python Dates
-    Python Math
-    Python JSON
     Python RegEx
     Python String Formatting
 
@@ -59,10 +53,6 @@ Machine Learning
     K-nearest neighbors
 
 Python MySQL
-    MySQL Get Started
-    MySQL Create Database
-    MySQL Create Table
-    MySQL Insert
     MySQL Select
     MySQL Where
     MySQL Order By

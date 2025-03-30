@@ -4,20 +4,28 @@
 # "x" - Create - Creates the specified file, returns an error if the file exists
 # "t" - Text - Default value. Text mode
 # "b" - Binary - Binary mode (e.g. images)
-# ====================================================
+# ======================os==============================
 # import os 
-# dir_path = os.path.dirname(os.path.realpath(__file__)) #pwd
+# dir_path = os.path.dirname(os.path.realpath(__file__)) #pwd or '__file__'
 # print(os.path.abspath(__file__) + "\n")#file path
 # print( os.path.join(dir_path,"ccc.txt"))
-# print(os.getcwd() + "\n")#pwd
-# os.path.exists(file_path)
+# print(os.getcwd() + "\n")#pwd    #h:\2025\summary\4_python
+
+# os.path.exists(file_or_floder_path)
 # os.path.isfile("/etc/password.txt")
 
 # os.remove(file_path) #removes a file.
 # os.rmdir(file_path) #removes an empty directory.
+
+
+# import shutil as sh
+# sh.copyfile( 'D:\\1\\1.txt', 'D:\\1\\00\\0.txt')#copy file
+# sh.copytree('D:\\1\\00' , 'D:\\1\\33')#copy folder
+# sh.move('D:\\1\\1.txt' , 'D:\\1\\33\\55.txt')# move file
+
 # ====================================================
 # f = open("demofile.txt", "rt")                             #Because "r" for read, and "t" for text are the default values, you do not need to specify them.
-# dir_path = os.path.dirname(os.path.realpath(__file__)) 
+# dir_path = os.path.dirname(os.path.realpath(__file__)) #'__file__'
 # file_path= os.path.join(dir_path,"demofile.txt")
 # print(os.path.exists(file_path))
 # ====================================================
@@ -49,6 +57,13 @@
 # # Delete Folder
 # os.rmdir("myfolder") 
 # ====================================================
- 
+# import numpy as np 
+
+# A=np.arange(0,100).reshape(10,10)
+# A=str(A)
+# p=r"H:\2025\Hesham Asem\slide_or_pdf\ML\1.csv"
+# outfile = open(p, 'w')
+# outfile.write(A)
+# outfile.close()
 # ====================================================
 

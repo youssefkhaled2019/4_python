@@ -1,6 +1,7 @@
 
-# ==================List============================
+# ==================List []============================
 # thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+# print(*list("love apple"))
 # print(thislist) 
 # print(*thislist) #apple banana cherry
 # print(len(thislist)) 
@@ -21,8 +22,19 @@
 #["apple", "blackcurrant", "watermelon", "cherry"]
 
 # thislist = ["apple", "banana", "cherry"]
-# thislist[1:3] = ["watermelon"]
-# ['apple', 'watermelon']
+# thislist[1:3] = ["watermelon"] # ['apple', 'watermelon']
+
+# a,n = ['a', 'b', 'c'], [1, 2, 3]
+# x = [a, n]
+# a*5 #repet list
+
+
+# x = [0] * 1000 # x = [0.0] * 1000
+# x = [[0]*8] *10
+
+
+
+
 
 #  ***************** (Join )Append-insert-extend *******************
 
@@ -43,7 +55,8 @@
 # thislist.extend(thistuple)#['apple', 'banana', 'cherry', 'kiwi', 'orange']
 
 #  ***************** Remove *******************
-
+# t[:]=[]
+# t[2:5]=[]
 # thislist = ["apple", "banana", "cherry"]
 # thislist.remove("banana")
 # thislist.pop(0) #remove first item
@@ -75,10 +88,47 @@
 #     newlist.append(x)
 # print(newlist)     
 
+
+
+
+# newlist = [ x**3 for x in range(12)]
+# newlist = [3*x for x in [y**2 for y in range(10)]]
 # newlist = [x for x in fruits if "a" in x]
 # newlist = [x for x in fruits if x != "apple"]   #??
+# newlist = [i for i in range(20) if i%3 ==0  and i %2 ==0 ]
+# newlist  = [(i,j) for i in range(3) for j in range(4)]
+# newlist = [[0 for i in range(5)] for j in range(7)]
 # newlist = [x if x != "banana" else "orange" for x in fruits]  #??
+# newlist = [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
 # print(newlist) 
+
+
+
+# y = list(map(lambda x : x**3 , range(12)))
+
+
+
+
+
+# from operator import itemgetter ,methodcaller
+
+# student_tuples = [('john', 'A', 15),('jane', 'B', 12),('dave', 'B', 10),]
+# print(sorted(student_tuples, key=itemgetter(2)))#index 2  ,, key=itemgetter(1,2)
+# print(sorted(student_tuples, key=itemgetter(1,2)))
+
+# messages = ['critical!!!', 'hurry!', 'bla bla', 'alabama'] 
+# print (sorted(messages, key=methodcaller( 'count', 'a')))
+
+# # =====================enumerate===========================
+# my_list = ['apple', 'banana', 'grapes', 'pear'] 
+# for c, value in enumerate(my_list, 1): 
+#     print(c, value)
+# # ======================zip==========================
+# alist = ['a1', 'a2', 'a3'] 
+# blist = ['b1', 'b2', 'b3'] 
+# for a, b in zip(alist, blist):
+#     print (a, b)
+
 
 #  ***************** sort-reverse *******************
 
@@ -97,6 +147,17 @@
 # thislist.sort()
 # thislist.sort(key = str.lower)  #??
 # thislist.reverse()
+
+
+# y=[1,2,3,4,5,6,7]
+# len (y)
+# sum(y) #print(sum([k for k in range(20)]))
+# max(y)
+# min(y)
+# sorted(y)
+
+# y=[('F', 9), ('Cl', 17), ('Br', 35), ('I', 53), ('At', 85)] 
+# sorted(y, key=lambda e: e[1])#reverse = True
 
 #  ***************** Copy *******************
 
@@ -117,6 +178,15 @@
 #   list1.append(x)
 
 # list1.extend(list2)  
+
+#  ***************** Methods *******************
+y=[1,2,3,4,5,6,7]
+
+y.count (555)
+y.index (5)
+
+y.reverse()
+list(range(20))
 
 
 

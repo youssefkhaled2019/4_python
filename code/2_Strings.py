@@ -1,5 +1,7 @@
-# =======================Strings ===============
+# ======================= Strings =======================
 # a = "Hello, World!"
+# a*3 
+
 # print(a[1])
 
 # for x in "banana":
@@ -10,13 +12,91 @@
 # print("expensive" not in txt) #True
 
 # a = " Hello, World! "
+# a[::-1] #a[ from : to   :step] #step -1 to reverse 
+# print(a[:])
 # print(a[2:5])
 # print(a[-5:-2])
 # print(a.upper()) 
 # print(a.lower()) 
+# print(a.count('z'))   
 # print(a.strip()) # returns "Hello, World!" 
 # print(a.replace("H", "J"))
 # print(a.split(",")) # returns ['Hello', ' World!'] 
+# print(sorted(list(a)) ) #print(sorted(a) )       #[' ', ' ', ' ', '!', ',', 'H', 'W', 'd', 'e', 'l', 'l', 'l', 'o', 'o', 'r']
+# print(set(a) ) #{' ', '!', 'd', 'e', 'l', 'o', 'H', 'r', ',', 'W'}
+
+# =======================  =======================
+
+# x = "12354785669854412503665" 
+# x.split("5",maxsplit=6) ['123', '478', '6698', '4412', '0366', '']
+
+# x = "12354785669854412503665\nddfdfdfdfdf\nddddddd" 
+# x.splitlines()                                          #['12354785669854412503665', 'ddfdfdfdfdf', 'ddddddd']
+
+# a = "yousefrkhaled20147@gmail.com-ahmed@fkrhaled20147 " #split text 3 parts from left
+# a.partition('@') #('yousefrkhaled20147', '@', 'gmail.com-ahmed@fkrhaled20147 ')
+# a = "yousefrkhaled20147@gmail.com-ahmed@fkrhaled20147 " #split text 3 parts from right
+# a.rpartition('@') #('yousefrkhaled20147@gmail.com-ahmed', '@', 'fkrhaled20147 ')
+
+# a.find('@')# position 18  if not found return -1
+# a.rfind('@')#position 34
+
+# a.index('@')#18  if not found  ==  error
+# # a.rindex('@')#34
+
+# try:
+#     a.index('@')
+# except:
+#     print(" not found ")  
+
+
+
+# a.capitalize() 
+# a.title() 
+# a.upper() 
+# "yousefrkhaled".center(30) #'        yousefrkhaled         '
+# "YOUsefrkhalED".swapcase() #'        youSEFRKHALed         ' # change captel to small and change small to captel
+# "yousefrkhaled".ljust(30) #'yousefrkhaled                 '
+# "yousefrkhaled".rjust(30) #''                 yousefrkhaled'
+# "yousefrkhaled".rjust(30,'-') #'-----------------yousefrkhaled'
+# '435'.zfill(10) #0000000435
+# " yousefrkhaled ".strip()#'yousefrkhaled'
+# " yousefrkhaled ".rstrip()#' yousefrkhaled'
+# " yousefrkhaled ".lstrip()#'yousefrkhaled '
+# "**abc**".strip("*")#'abc' # "**abc**".replace("*","")
+# "youssef".endswith("f")
+# "youssef".startswith("y")
+# "-".join(['a','b','c']) #'a-b-c'   # ' '.join('hello')#'h e l l o'
+
+# "ddd".isalpha()
+# "142.3".isdecimal()
+# "142".isnumeric()
+# "232323".isdigit()
+# ....more fro is___()
+
+# =======================  =======================
+# print(r"sweet \n home alabama" )
+
+
+# a , b = 'aaaa' , 'bbbbb' 
+# print(a,b,end=' ')
+
+# y,yy = 'youssef',1010.33
+# x="sweet home %s" %y
+# x="sweet home %d" %yy 
+# x= "sweet %s %d" % ( y , yy)
+# x="sweet home %8d"%yy #sweet home     1010  # add string yy 8 digets and and other space 
+# x="sweet home %08d"%yy #sweet home 00001010  # add string yy 8 digets and and other 0 
+# x="sweet home %.8f"%yy #sweet home 1010.33000000 
+
+
+# "{}{}".format("youssef",1222)#'youssef1222'
+# '{1} and {0}'.format('red', 'blue')
+# "First: {first}. Last: {last}.".format(last='Z', first='A')
+# "pi = {0:.3f}".format(3.12528445)
+# '{:s} {:d} years old'.format('Im',20)
+# '|' + '{:^51}'.format('Hello') + '|'  # ==>  '|                       Hello                       |'
+# '{0:10} ==> {1:10d}'.format('name', 56322) # 'name       ==>      56322'
 
 
 # age = 36

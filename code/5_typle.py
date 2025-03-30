@@ -6,7 +6,7 @@
 
 
 
-# =================================Tuples====================================
+# =================================Tuples ()====================================
 # A tuple is a collection which is ordered and unchangeable.
 # Tuple items are [ordered], [unchangeable], and [allow duplicate] values.
 # Tuple items are indexed, the first item has index [0], the second item has index [1]
@@ -107,7 +107,9 @@
 #   print(thistuple[i])
 #   i = i + 1   
 
-
+#  ***************** sort  *******************
+student_tuples = [('john', 'A', 15),('jane', 'B', 12),('dave', 'B', 10)] 
+a = sorted(student_tuples, key=lambda student: student[2])
 #  ***************** Join  *******************
 
 # tuple1 = ("a", "b" , "c")

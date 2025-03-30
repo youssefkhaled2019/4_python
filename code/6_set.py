@@ -1,4 +1,4 @@
-# ================Sets===============================
+# ================Sets {}===============================
 # myset = {"apple", "banana", "cherry"} 
 # A set is a collection which is unordered, unchangeable*, and unindexed.
 # * Note: Set items are unchangeable, but you can remove items and add new items.
@@ -20,6 +20,12 @@
 # print(len(thisset)) 
 # set1 = {"abc", 34, True, 40, "male"} 
 # thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
+
+
+
+
+
+a ={n**2 for n in range(12)}
 
 
 #==================Access=========================
