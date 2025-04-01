@@ -11,6 +11,8 @@
 # print(thislist[-1]) 
 # print(thislist[2:5]) 
 # print(thislist[-4:-1])
+# print (x[::2])
+# print (x[0][0])
 
 # Change Item Value
 
@@ -53,6 +55,14 @@
 # thislist = ["apple", "banana", "cherry"]
 # thistuple = ("kiwi", "orange")
 # thislist.extend(thistuple)#['apple', 'banana', 'cherry', 'kiwi', 'orange']
+
+
+
+# x=[1,2,3,4,5]
+#x.append([1,2,4])[1, 2, 3, 4, 5, [1, 2, 4]]
+#x.append(1) [1, 2, 3, 4, 5, 1]
+#x.extend([1,2,4]) [1, 2, 3, 4, 5, 1, 2, 4]
+
 
 #  ***************** Remove *******************
 # t[:]=[]
@@ -173,6 +183,7 @@
 # list2 = [1, 2, 3]
 
 # list3 = list1 + list2
+# list3=[list1,list2]
 
 # for x in list2:
 #   list1.append(x)

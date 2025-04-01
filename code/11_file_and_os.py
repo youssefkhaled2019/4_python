@@ -11,11 +11,16 @@
 # print( os.path.join(dir_path,"ccc.txt"))
 # print(os.getcwd() + "\n")#pwd    #h:\2025\summary\4_python
 
-# os.path.exists(file_or_floder_path)
+# a = os.path.exists('D:\\00')  #folder 
+# a = os.path.exists('D:\\1\\0.txt') # file 
 # os.path.isfile("/etc/password.txt")
 
 # os.remove(file_path) #removes a file.
 # os.rmdir(file_path) #removes an empty directory.
+
+
+# os.makedirs('D:\\1\\00' , exist_ok = True)
+
 
 
 # import shutil as sh
@@ -23,7 +28,20 @@
 # sh.copytree('D:\\1\\00' , 'D:\\1\\33')#copy folder
 # sh.move('D:\\1\\1.txt' , 'D:\\1\\33\\55.txt')# move file
 
+# ========================glob============================
+
+
+import glob as gb
+# a = gb.glob(pathname= r'H:\2025\summary\4_python\code\*.*')# list of path file
+b = gb.glob1(r'H:\2025\summary\4_python\code' , '*.*' ) #'*.pdf' #list name file 
+
 # ====================================================
+# a=open('xx.txt','w',encoding="utf8")
+# a.write("xxxxxx\n nousdrr ")
+# a.close()
+
+# ====================================================
+
 # f = open("demofile.txt", "rt")                             #Because "r" for read, and "t" for text are the default values, you do not need to specify them.
 # dir_path = os.path.dirname(os.path.realpath(__file__)) #'__file__'
 # file_path= os.path.join(dir_path,"demofile.txt")

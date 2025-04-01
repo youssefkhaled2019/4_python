@@ -1,6 +1,6 @@
 # ======================= Strings =======================
 # a = "Hello, World!"
-# a*3 
+# a*3 ,a+a
 
 # print(a[1])
 
@@ -12,6 +12,7 @@
 # print("expensive" not in txt) #True
 
 # a = " Hello, World! "
+# a[:]
 # a[::-1] #a[ from : to   :step] #step -1 to reverse 
 # print(a[:])
 # print(a[2:5])
@@ -23,6 +24,7 @@
 # print(a.replace("H", "J"))
 # print(a.split(",")) # returns ['Hello', ' World!'] 
 # print(sorted(list(a)) ) #print(sorted(a) )       #[' ', ' ', ' ', '!', ',', 'H', 'W', 'd', 'e', 'l', 'l', 'l', 'o', 'o', 'r']
+# sorted(a,reverse=True)
 # print(set(a) ) #{' ', '!', 'd', 'e', 'l', 'o', 'H', 'r', ',', 'W'}
 
 # =======================  =======================
@@ -85,8 +87,11 @@
 # x="sweet home %s" %y
 # x="sweet home %d" %yy 
 # x= "sweet %s %d" % ( y , yy)
+# "youssef  =%d and %s =%f"%(10,'nader',0.4)
+# "youssef  =%8d and %20s =%20.5f"%(20204,'nader',555.4555555)
 # x="sweet home %8d"%yy #sweet home     1010  # add string yy 8 digets and and other space 
 # x="sweet home %08d"%yy #sweet home 00001010  # add string yy 8 digets and and other 0 
+# "youssef  =%08d and %20s =%20.5f"%(20204,'nader',555.4555555)
 # x="sweet home %.8f"%yy #sweet home 1010.33000000 
 
 

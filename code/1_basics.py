@@ -83,7 +83,10 @@
 
 # =====================[public function]=========================
 
-
+# #dir(m) for show all premter and verible  import math as m 
+# sorted
+# list(reversed([1,23]))
+# del #delete
 # chr(10) #\n
 # bin(3) #0b11
 # oct(8)#001000 => [001][000]
@@ -101,11 +104,10 @@
 # print(random.uniform(1,20))#between a-1b size one element float
 
 # print(random.randrange(10)) 
-# print(random.randrange(1, 10)) #between a-b size one element int  start and  end , step 
+# print(random.randrange(1, 10))  #randrange(start, stop=None, step=1) size one element  int  EX: randrange(0,20,2) retutn even
 # print(random.randrange(0,20,2))
 
-# print(random.choice(['a','b','c']))
-# print(random.choice('sweet home alabama'))# get one elment
+# print(random.choice(['a','b','c']))#choice('sweet home alabama')# get one elment
  
 # print(random.sample(range(200) ,10))#print 10 utem reandon integer
 
@@ -141,7 +143,7 @@
 
 # 15 < a < 30 
 
-# Note  a != b  ,and,or,not,,
+# Note  a != b  ,and,or,not,, and == &    ,, or== |            Continue   break  is None ,is not None
 
 
 # -----------------
@@ -221,13 +223,12 @@ elif (x==2) | (y==3):#or
 
 
 #-------------------------------
-
+# print(sum([k for k in range(20)]))
 # newlist = [ x**3 for x in range(12)]
-
+#           [3*x for x in [y**2 for y in range(10)]]
 # newlist = [x for x in fruits if "a" in x]
 # newlist = [x for x in fruits if x != "apple"]   #??
 # newlist  = [i for i in range(20) if i%3 ==0  and i %2 ==0 ]
- 
 # newlist = [[0 for i in range(5)] for j in range(7)]
 # newlist = [x if x != "banana" else "orange" for x in fruits]  #??
 # newlist = [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
@@ -249,18 +250,25 @@ elif (x==2) | (y==3):#or
 
 
 # ====================== [try-except] ========================
+# IOError , ValueError , ImportError , EOFError , KeyboadInterrupt
+
+
 # try:
 #   print(x)
 # except:
 #   print("An exception occurred") 
 
 
-# try:
-#   print(x)
-# except NameError:
-#   print("Variable x is not defined")
-# except:
-#   print("Something else went wrong")   
+try:
+  print(x)
+except NameError:
+  print("Variable x is not defined")
+except ZeroDivisionError as err:
+    print("Error message is:", err)  
+except:
+  print("Something else went wrong")   
+finally : 
+    print ("end")
 
 
 # try:

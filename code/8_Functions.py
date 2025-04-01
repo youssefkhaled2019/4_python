@@ -1,6 +1,21 @@
 def info():
     pass
 print(info())#return none
+
+#===================function=========================
+
+def star(): 
+ a=1
+ b=2
+ return a,b
+x,z=star()
+print(x,z) 
+
+
+
+
+
+
 #===================function=========================
 def my_function(fname, lname):
   print(fname + " " + lname)
@@ -57,8 +72,12 @@ def tri_recursion(k):
   return result
 # =====================
 
-
+var2 = (1,2,3) 
+my_function2(*var2) 
 my_function2("Emil", "Refsnes") 
+
+var1 = {'child1':"1",'child2':"2"} 
+my_function3(**var1) 
 my_function3(child1 = "Emil", child2 = "Tobias", child3 = "Linus") 
 my_function4(fname = "Tobias", lname = "Refsnes") 
 
@@ -81,12 +100,70 @@ tri_recursion(6)
 
 
 
+def powers(m,n) :  
+    print (m**(n)) 
+ 
+powers(n=3 ,m= 4)
+
+def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue') : 
+    print ( "-- This parrot wouldn't", action) 
+    print ("if you put", voltage, "volts through it.") 
+    print ("-- Lovely plumage, the", type) 
+    print ("-- It's", state, "!") 
+parrot(1000,) # 1 positional argument 
+print("-"*40,"\n")
+parrot(voltage=1000) # 1 keyword argument 
+print("-"*40,"\n")
+parrot(voltage=1000000, action='VOOOOOM') # 2 keyword arguments 
 
 
+
+#error funtion
+def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue') :  
+    print ( "-- This parrot wouldn't", action) 
+    print ("if you put", voltage, "volts through it.") 
+    print ("-- Lovely plumage, the", type) 
+    print ("-- It's", state, "!") 
+ 
+parrot() # required argument missing 
+# parrot(voltage=5.0, 'dead') # non-keyword argument after a keyword argument 
+parrot(110, voltage=220) # duplicate value for the same argument 
+parrot(actor='John Cleese') # unknown keyword argument 
+
+
+
+
+
+
+
+
+
+# ================================================
+#                  recursive functions 
+# ================================================
+
+
+
+def fac(n): 
+    if n ==1 :  
+        return 1 
+    else :  
+        return n * fac(n-1) 
+ 
+print(fac(10))
 
 # ================================================
 #                  Function 
 # ================================================
+
+xx = 5 
+def gg() :  
+    global xx 
+    xx = 14 
+gg() 
+print (xx)
+
+
 # Function Inside Function
 def myfunc():
   x = 300
